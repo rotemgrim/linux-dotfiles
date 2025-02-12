@@ -9,3 +9,16 @@ alias ll='eza -lha'
 
 atuin init fish --disable-up-arrow | source
 starship init fish | source
+
+function fish_greeting
+    echo -n "Have a great day! "
+    printf "%s%s%s" (set_color cyan; echo -n (whoami)) (set_color purple; printf " 󰿄 ") (set_color green; echo -n (hostname))
+    set_color normal
+    echo ""
+end
+
+cat ~/motd | lolcat
+alias air='~/go/bin/air'
+set -x GOROOT /usr/local/go
+set -x GOPATH $HOME/go
+set -x PATH $PATH $GOPATH/bin:$GOROOT/bin

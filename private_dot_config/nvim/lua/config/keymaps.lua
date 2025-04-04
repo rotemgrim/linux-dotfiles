@@ -33,3 +33,9 @@ map("n", "<A-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 map("i", "<A-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 map("n", "<A-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 map("i", "<A-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+
+if vim.g.neovide then
+  map({ "n", "v" }, "<C-=>", ":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<CR>")
+  map({ "n", "v" }, "<C-->", ":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<CR>")
+  map({ "n", "v" }, "<C-0>", ":lua vim.g.neovide_scale_factor = 1<CR>")
+end

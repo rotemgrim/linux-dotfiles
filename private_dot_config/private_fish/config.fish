@@ -11,6 +11,7 @@ atuin init fish --disable-up-arrow | source
 starship init fish | source
 
 function fish_greeting
+    # this should be inside the greeting function
     cat ~/motd | lolcat
     echo -n "Have a great day! "
     printf "%s%s%s" (set_color cyan; echo -n (whoami)) (set_color purple; printf " 󰿄 ") (set_color green; echo -n (hostname))

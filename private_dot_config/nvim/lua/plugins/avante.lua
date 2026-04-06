@@ -1,0 +1,20 @@
+-- return {
+--   "yetone/avante.nvim",
+--   opts = {
+--     provider = "copilot",
+--     copilot = {
+--       model = "claude-sonnet-4.5",
+--     },
+--     behaviour = {
+--       auto_scroll = true, -- Enable auto-scroll in chat
+--     },
+--     windows = {
+--       sidebar_header = {
+--         enabled = true, -- Show model name in header
+--         align = "center",
+--         rounded = true,
+--         include_model = true, -- Display the model name in the header
+--       },
+--     },
+--   },
+-- }

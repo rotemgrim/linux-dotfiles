@@ -1,0 +1,16 @@
+{
+  "providers": {
+    "github-copilot": {
+      "modelOverrides": {
+        "claude-sonnet-4.5": {
+          "cost": {
+            "input": 3,
+            "output": 15,
+            "cacheRead": 0.30,
+            "cacheWrite": 3.75
+          }
+        }
+      }
+    }
+  }
+}
